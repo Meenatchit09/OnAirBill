@@ -23,7 +23,7 @@ import { useDispatch, useSelector } from 'react-redux'
 
 // ** Third Party Components
 import ReactPaginate from 'react-paginate'
-import { ChevronDown } from 'react-feather'
+import { ChevronDown, Edit } from 'react-feather'
 import DataTable from 'react-data-table-component'
 import { Card, CardHeader, CardTitle, CardBody, Input, Row, Col, Label, CustomInput, Button, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem  } from 'reactstrap'
 import { MoreVertical, FileText, Trash2, Archive } from 'react-feather'
@@ -336,7 +336,10 @@ const UsersList = () => {
                         onClick = {() =>
                           toggleSidebar(item)
                         }
-                      >Edit</Button.Ripple></td>
+                        
+                      >
+                        <Edit size={14} />
+                        Edit</Button.Ripple></td>
                     </tr>
                   );
                 })
